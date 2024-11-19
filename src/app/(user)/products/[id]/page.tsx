@@ -23,7 +23,7 @@ export async function generateMetadata({
 }
 
 const ProductItem = async ({ params }: ProductItemPageProps) => {
-  const { id } = await params;
+  const { id } = params;
 
   const [productItems, productItem] = await Promise.all([
     fetchAllProducts(),
